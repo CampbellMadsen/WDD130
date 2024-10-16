@@ -1,0 +1,17 @@
+:root{
+    --heading-font: "Trebuchet MS"
+}
+body{
+    background-color: #5ca1d7;
+    text-align: center;
+}
+.hoverable{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    color:white;
+    text-align:center;
+    font-weight: bolder;
+}
+.hoverable:hover{
+    color:black
+}
