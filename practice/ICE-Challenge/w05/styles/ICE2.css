@@ -1,0 +1,24 @@
+body{
+    margin:0;
+}
+main{
+    background-color: #737373;
+    margin:0;
+    text-align: center;
+}
+
+.circle{
+    border-radius: 50%;
+    border: 10px solid #444444;
+    width: 20%;
+    margin: 5%;
+}
+.desk-image{
+    display: inline;
+}
+.logo-image{
+    display: inline;
+}
+.guy-image{
+    display: inline;
+}

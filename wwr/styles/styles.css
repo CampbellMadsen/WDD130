@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+:root{
+    --heading-font: "Lexend", Georgia, serif;
+    --paragraph-font: "Hind Vadodara", Helvetica, sans-serif; 
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,6 +11,9 @@
 body {
     background-color: #f5f6ee;
     color:#2B4570;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #ffd23f;
@@ -13,6 +22,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color:#12664f;
+    padding: 35px;
 }
 nav a:hover{
     background-color: #12664f;
@@ -20,6 +30,8 @@ nav a:hover{
 }
 footer {
     background-color: #12664f;
+    padding: 25px 15px;
+    margin-top: 200px;
 }
 footer p{
     font-size: 1.2em;
@@ -35,8 +47,26 @@ footer a{
 footer a:hover{
     color: #ffd23f;
 }
+footer .social img{
+    padding-top: 15px;
+}
 main section{
     text-align: center;
+}
+main section img{
+    box-sizing: border-box;
+}
+a{
+    font-family: var(--heading-font)
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+}
+h2{
+    margin:0;
+}
+p{
+    font-family: var(--heading-font);
 }
 #background {
     height: 725px;
@@ -49,6 +79,9 @@ main section{
 #hero-img{
     width: 100%;
 }
+#logo_link{
+    padding-top: 5px;
+}
 .button-box{
     text-align: center;
 }
@@ -57,22 +90,31 @@ main section{
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 .msg{
     background-color: #2B4570;
     color:white;
+    line-height: 1.5em;
+    padding: 35px
 }
 .msg h2{
     color:white;
 }
-.msh p{
+.msg p{
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .book,
 .join {
     background-color: #ffd23f;
     color:#12664f;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover,
 .join:hover{
@@ -80,5 +122,13 @@ main section{
     color:white
 }
 .home-title{
-    color:#2B4570
+    color:#2B4570;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #12664f;
 }
