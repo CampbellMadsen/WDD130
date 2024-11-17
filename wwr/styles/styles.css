@@ -111,6 +111,7 @@ p{
 #banner{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:103px;
 }
 #banner-msg{
     grid-column: 2;
@@ -135,6 +136,58 @@ p{
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+}
+.question-left {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #2B4570;
+}
+.question-left img{
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 10px solid white;
+}
+.question-left h1{
+    grid-column: 2;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    margin-top: 5px
+}
+.question-left p{
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    margin-top:-15px
+}
+.question-right {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.question-right img{
+    grid-column: 2;
+    grid-row: 1/3;
+    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 10px solid #2B4570;
+}
+.question-right h1{
+    grid-column: 1;
+    border-bottom: 2px solid #2B4570;
+    margin-left: 15px;
+    padding-bottom: 15px;
+    margin-top: 5px
+}
+.question-right p{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top:-15px;
+    margin-left: 15px;
 }
 .home-grid{
     display: grid;
