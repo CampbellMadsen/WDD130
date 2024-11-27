@@ -1,8 +1,9 @@
-.song{
+.song,.group{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
 }
+
 .icon{
     grid-column: 2;
     grid-row: 1;
@@ -41,7 +42,17 @@ audio{
     transition: width 0.5s;
     width: 150px;
     grid-row: 1/-1;
-    margin-right: 15px ;
+}
+.group input[type=checkbox]:checked~.info {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 2;
+    grid-column:2/7;
+}
+.group input[type=checkbox]:checked~.cover {
+    transition: width 0.5s;
+    width: 150px;
+    grid-row: 1/-1;
 }
 input{
     display: none;
