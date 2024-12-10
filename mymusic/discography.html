@@ -11,22 +11,24 @@
 <body>
     <header>
         <a href="home.html" id="logo_link">
-            <img class="logo" src="images/temp-logo.png" alt="my music logo">
+            <img class="logo" src="images/mymusiclogo.svg" alt="my music logo">
         </a>
         <nav>
             <h3>My Music</h3>
             <a href="home.html">Home</a>
             <a href="discography.html">Discography</a>
-            <a href="archve.html">Archive</a>
+            <a href="archive.html">Archive</a>
         </nav>
     </header>
     <main>
-        <h1 id="discography-title">DISCOGRAPHY</h1>
+        <div id="discography-title">
+            <div class="discography-title-background"><h1>D I S C O G R A P H Y</h1></div>
+        </div>
         <div id="songlist">
             <div id="bbt6-group">
                 <div class="group">
                     <label class="song-title" for="bbt6">BeepBox Discord Tournament 6 Submissions</label>
-                    <input id="bbt6" type="checkbox">
+                    <input id="bbt6" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="Tourney 6 logo">
                     <a class="yt-link" target="_blank" href="https://tinyurl.com/2b3u9jc4"><img
                             src="images/youtube-logo.webp" width="30px" alt="youtube link"></a>
@@ -39,7 +41,7 @@
                 </div>
                 <div class="song">
                     <label class="song-title" for="windswept-sunrise">Windswept Sunrise | Round 1</label>
-                    <input id="windswept-sunrise" type="checkbox">
+                    <input id="windswept-sunrise" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="Windswept Sunrise">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -54,10 +56,11 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="beep-bossa">Beep Bossa | Round 2</label>
-                    <input id="beep-bossa" type="checkbox">
+                    <input id="beep-bossa" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="Beep Bossa">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -72,10 +75,11 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="these-parts">I'm The Law In These Parts | Round 3</label>
-                    <input id="these-parts" type="checkbox">
+                    <input id="these-parts" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="I'm The Law In These Parts">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -90,10 +94,11 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="ground-floor">Ground Floor | Round 4</label>
-                    <input id="ground-floor" type="checkbox">
+                    <input id="ground-floor" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="Ground Floor">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -108,10 +113,11 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="fate-of-the-universe">Fate of the Universe | Round 5</label>
-                    <input id="fate-of-the-universe" type="checkbox">
+                    <input id="fate-of-the-universe" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="Fate of the Universe">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -126,10 +132,11 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="the-end">the end. | Round 6</label>
-                    <input id="the-end" type="checkbox">
+                    <input id="the-end" type="radio" name="radio">
                     <img class="cover" src="images/t6logo.png" alt="the end">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -144,14 +151,15 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
             <div class="spacer"></div>
             <div id="sky-racer-group">
                 <div class="group">
                     <label class="song-title" for="sky-racer-ep">Sky Racer EP</label>
-                    <input id="sky-racer-ep" type="checkbox">
-                    <img class="cover" src="images/Sky Racer Ep Cover.png" alt="Sky Racer EP">
+                    <input id="sky-racer-ep" type="radio" name="radio">
+                    <img class="cover outline" src="images/Sky Racer Ep Cover.png" alt="Sky Racer EP">
                     <a class="yt-link" target="_blank" href="https://www.youtube.com/playlist?list=PL9TD7v59GNJcrVY_Qno0DR90RXan2nWcX"><img
                             src="images/youtube-logo.webp" width="30px" alt="youtube link"></a>
                     <div class="info">
@@ -163,8 +171,8 @@
                 </div>
                 <div class="song">
                     <label class="song-title" for="sky-racer">Sky Racer | Sky Racer EP</label>
-                    <input id="sky-racer" type="checkbox">
-                    <img class="cover" src="images/Sky Racer Cover.png" alt="Sky Racer">
+                    <input id="sky-racer" type="radio" name="radio">
+                    <img class="cover outline" src="images/Sky Racer Cover.png" alt="Sky Racer">
                     <audio controls>
                         <source src="audio/Sky Racer.mp3" type="audio/mp3">
                     </audio>
@@ -178,11 +186,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="go-again">Go Again | Sky Racer EP</label>
-                    <input id="go-again" type="checkbox">
-                    <img class="cover" src="images/Go Again cover.jpg" alt="Go Again">
+                    <input id="go-again" type="radio" name="radio">
+                    <img class="cover outline" src="images/Go Again cover.jpg" alt="Go Again">
                     <audio controls>
                         <source src="audio/Go Again.mp3" type="audio/mp3">
                     </audio>
@@ -196,11 +205,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="sound-limit">Sound Limit | Sky Racer EP</label>
-                    <input id="sound-limit" type="checkbox">
-                    <img class="cover" src="images/Sound Limit cover.jpg" alt="Sound Limit">
+                    <input id="sound-limit" type="radio" name="radio">
+                    <img class="cover outline" src="images/Sound Limit cover.jpg" alt="Sound Limit">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -214,11 +224,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="focus">Focus | Sky Racer EP</label>
-                    <input id="focus" type="checkbox">
-                    <img class="cover" src="images/Focus cover.jpg" alt="Focus">
+                    <input id="focus" type="radio" name="radio">
+                    <img class="cover outline" src="images/Focus cover.jpg" alt="Focus">
                     <audio controls>
                         <source src="audio/Focus.mp3" type="audio/mp3">
                     </audio>
@@ -232,11 +243,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="iacdtt">It All Comes Down To This | Sky Racer EP</label>
-                    <input id="iacdtt" type="checkbox">
-                    <img class="cover" src="images/IACDTT cover.jpg" alt="It all comes down to this">
+                    <input id="iacdtt" type="radio" name="radio">
+                    <img class="cover outline" src="images/IACDTT cover.jpg" alt="It all comes down to this">
                     <audio controls>
                         <source src="audio/It All Comes Down To This.mp3" type="audio/mp3">
                     </audio>
@@ -250,13 +262,14 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
             <div class="spacer"></div>
             <div id="beep-bishop-group">
                 <div class="group">
                     <label class="song-title" for="beep-bishop">Beep Bishop Contest Submissions</label>
-                    <input id="beep-bishop" type="checkbox">
+                    <input id="beep-bishop" type="radio" name="radio">
                     <img class="cover" src="images/BBlogo.png" alt="Beep Bishop">
                     <div class="info">
                         <h3 class="desc-title">Description</h3>
@@ -265,7 +278,7 @@
                 </div>
                 <div class="song">
                     <label class="song-title" for="fire-flower-freeway">Fire Flower Freeway | [BBRACER]</label>
-                    <input id="fire-flower-freeway" type="checkbox">
+                    <input id="fire-flower-freeway" type="radio" name="radio">
                     <img class="cover" src="images/BBlogo.png" alt="Fire flower freeway">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -280,10 +293,11 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="bits-brass">Bits & Brass | [BBMARCH]</label>
-                    <input id="bits-brass" type="checkbox">
+                    <input id="bits-brass" type="radio" name="radio">
                     <img class="cover" src="images/BBlogo.png" alt="Bits and Brass">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
@@ -296,14 +310,15 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
             <div class="spacer"></div>
             <div id="misc-group">
                 <div class="group">
                     <label class="song-title" for="miscellaneous-songs">Miscellaneous Songs & remixes</label>
-                    <input id="miscellaneous-songs" type="checkbox">
-                    <img class="cover" src="images/temp-logo.png" alt="Miscellaneous songs">
+                    <input id="miscellaneous-songs" type="radio" name="radio">
+                    <img class="cover" src="images/mymusiclogo.svg" alt="Miscellaneous songs">
                     <div class="info">
                         <h3 class="desc-title">Description</h3>
                         <p class="desc-text">description text</p>
@@ -311,8 +326,8 @@
                 </div>
                 <div class="song">
                     <label class="song-title" for="space-type-beat">Space (CWC Type Beat)</label>
-                    <input id="space-type-beat" type="checkbox">
-                    <img class="cover" src="images/Space.png" alt="Space">
+                    <input id="space-type-beat" type="radio" name="radio">
+                    <img class="cover outline" src="images/Space.png" alt="Space">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -326,11 +341,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="funky-monky-christmas">Funky Monky Christmas</label>
-                    <input id="funky-monky-christmas" type="checkbox">
-                    <img class="cover" src="images/funky-monky-christmas.png" alt="funky monky christmas">
+                    <input id="funky-monky-christmas" type="radio" name="radio">
+                    <img class="cover outline" src="images/funky-monky-christmas.png" alt="funky monky christmas">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -344,11 +360,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="scare-lemanon">Scare Lemanon</label>
-                    <input id="scare-lemanon" type="checkbox">
-                    <img class="cover" src="images/scare-lemanon.png" alt="scare lemanon">
+                    <input id="scare-lemanon" type="radio" name="radio">
+                    <img class="cover outline" src="images/scare-lemanon.png" alt="scare lemanon">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -362,11 +379,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="Amanaplanacanalpanama123454321">Amanaplanacanalpanama123454321</label>
-                    <input id="Amanaplanacanalpanama123454321" type="checkbox">
-                    <img class="cover" src="images/amanaplanacanalpanama123454321.png" alt="amanaplanacanalpanama123454321">
+                    <input id="Amanaplanacanalpanama123454321" type="radio" name="radio">
+                    <img class="cover outline" src="images/amanaplanacanalpanama123454321.png" alt="amanaplanacanalpanama123454321">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -380,11 +398,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="keep-going">Keep Going</label>
-                    <input id="keep-going" type="checkbox">
-                    <img class="cover" src="images/temp-logo.png" alt="keep-going">
+                    <input id="keep-going" type="radio" name="radio">
+                    <img class="cover" src="images/mymusiclogo.svg" alt="keep-going">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -396,11 +415,12 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
                 <div class="song">
                     <label class="song-title" for="go">Go</label>
-                    <input id="go" type="checkbox">
-                    <img class="cover" src="images/temp-logo.png" alt="go">
+                    <input id="go" type="radio" name="radio">
+                    <img class="cover" src="images/mymusiclogo.svg" alt="go">
                     <audio controls>
                         <source src="audio/Sound Limit.mp3" type="audio/mp3">
                     </audio>
@@ -412,15 +432,18 @@
                         <h3 class="date-title">Released</h3>
                         <p class="date-text">5/30/24</p>
                     </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
         </div>
+        <div class="spacer"></div>
     </main>
     <footer>
         <a href="home.html" id="logo_link">
-            <img class="logo" src="images/temp-logo.png" alt="my music logo" width="30px">
+            <img class="logo" src="images/mymusiclogo.svg" alt="my music logo">
         </a>
-
+        <p>All music on this site is made with&nbsp;<a target="_blank" href="https://www.beepbox.co">Beepbox.co</a>&nbsp;by John Nesky and its derivatives. Songs are free to download and use with credit.</p>
+        <a class="yt-link" target="_blank" href="https://tinyurl.com/2b3u9jc4"><img src="images/youtube-logo.webp" width="30px"alt="youtube link">
     </footer>
 </body>
 

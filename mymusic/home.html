@@ -9,26 +9,28 @@
 <body>
     <header>
         <a href="home.html" id="logo_link">
-            <img class="logo" src="images/temp-logo.png" alt="my music logo" width="30px">
+            <img class="logo" src="images/mymusiclogo.svg" alt="my music logo">
         </a>
         <nav>
             <h3>My Music</h3>
             <a href="home.html">Home</a>
             <a href="discography.html">Discography</a>
-            <a href="archve.html">Archive</a>
+            <a href="archive.html">Archive</a>
         </nav>
     </header>
     <main>
         <div>
-            <h1>Featured Music</h1>
+            <div id="discography-title">
+                <div class="discography-title-background"><h1>F E A T U R E D &nbsp; M U S I C</h1></div>
+            </div>
             <img class="big-img" src="images/Sky Racer Ep Cover.png" alt="Sky racer cover">
         </div>
         <div class="spacer"></div>
         <div id="featured-group">
             <div class="song" id="first-page-song">            
                 <label class="song-title" for="sky-racer">Sky Racer | Sky Racer EP</label>
-                <input id= "sky-racer" type="checkbox">
-                <img class="cover" src="images/Sky Racer Cover.png" alt="Sky Racer">
+                <input id= "sky-racer" type="radio" name="radio">
+                <img class="cover outline" src="images/Sky Racer Cover.png" alt="Sky Racer">
                 <audio controls>
                     <source src="audio/Sound Limit.mp3" type="audio/mp3">
                 </audio>
@@ -40,11 +42,12 @@
                     <h3 class="date-title">Released</h3>
                     <p class="date-text">5/30/24</p>
                 </div>
+                <div class="shadow"></div>
             </div>
             <div class="song">            
                 <label class="song-title" for="sound-limit">Sound Limit | Sky Racer EP</label>
-                <input id= "sound-limit" type="checkbox">
-                <img class="cover" src="images/Sound Limit cover.jpg" alt="Sound Limit">
+                <input id= "sound-limit" type="radio" name="radio">
+                <img class="cover outline" src="images/Sound Limit cover.jpg" alt="Sound Limit">
                 <audio controls>
                     <source src="audio/Sound Limit.mp3" type="audio/mp3">
                 </audio>
@@ -56,11 +59,12 @@
                     <h3 class="date-title">Released</h3>
                     <p class="date-text">5/30/24</p>
                 </div>
+                <div class="shadow"></div>
             </div>
             <div class="song">            
                 <label class="song-title" for="iacdtt">It All Comes Down To This | Sky Racer EP</label>
-                <input id= "iacdtt" type="checkbox">
-                <img class="cover" src="images/IACDTT cover.jpg" alt="It all comes down to this">
+                <input id= "iacdtt" type="radio" name="radio">
+                <img class="cover outline" src="images/IACDTT cover.jpg" alt="It all comes down to this">
                 <audio controls>
                     <source src="audio/Sound Limit.mp3" type="audio/mp3">
                 </audio>
@@ -72,22 +76,39 @@
                     <h3 class="date-title">Released</h3>
                     <p class="date-text">5/30/24</p>
                 </div>
+                <div class="shadow"></div>
             </div>
         </div>
         <div class="spacer"></div>
         <div id="about-me">
-            <h1>Recent Updates</h1>
-            <a>stuff happened I think</a>
-            <h1>about me</h1>
-            <a>hey</a>
+            <div id="banner">
+                <img id="beepbox-editor" src="images/beepbox-editor.png">
+            </div>
+            <section id="about-msg">
+                <div id="current-project">
+                    <h1>What I'm Currently Working On</h1>
+                    <p>This website!</p>
+                </div>
+                <div id="recent-updates">
+                    <h1>Recent Updates</h1>
+                    <p>&lt;12/9/2024> today</p>
+                </div>
+                <div id="about-me-msg">
+                    <h1>About Me</h1>
+                    <p>Hello, my name is Campbell Madsen. I discovered Beepbox in 2020, and have made music since then.</p>
+                    <p>I play the piano and alto saxophone, and love video game music.</p>
+                </div>
+            </section>
+
         </div>
         <div class="spacer"></div>
     </main>
     <footer>
         <a href="home.html" id="logo_link">
-            <img class="logo" src="images/temp-logo.png" alt="my music logo" width="30px">
+            <img class="logo" src="images/mymusiclogo.svg" alt="my music logo">
         </a>
-
+        <p>All music on this site is made with&nbsp;<a target="_blank" href="https://www.beepbox.co">Beepbox.co</a>&nbsp;by John Nesky and its derivatives. Songs are free to download and use with credit.</p>
+        <a class="yt-link" target="_blank" href="https://tinyurl.com/2b3u9jc4"><img src="images/youtube-logo.webp" width="30px"alt="youtube link">
     </footer>
 </body>
 </html>

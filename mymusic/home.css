@@ -10,7 +10,8 @@ body {
     background-color: #f7ff7f;
 }
 header {
-    background-color: white;
+    background-color: #202225;
+    color:white;
     display: grid;
     grid-template-columns: 150px auto;
     height: 90px;
@@ -21,17 +22,28 @@ nav{
     max-height: 90px;
 }
 nav a {
+    color: white;
     text-align: center;
     text-decoration: none;
     padding: 35px;
     font-family: var(--heading-font);
+    transition: font-size 0.2s;
+}
+nav a:hover{
+    background-color: #a789fa;
+    color:#202225;
+    font-size: 17px;
+    box-shadow: 10px 10px #20222587;
 }
 .logo{
-    width: 91px;
+    width: 88px;
+    padding-top: 1px;
+    padding-left: 1px;
 }
 nav h3 {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
+    font-size: 25px;
     font-family: var(--heading-font)
 }
 h3 {
@@ -42,8 +54,6 @@ h1 {
     font-family: var(--heading-font);
     font-weight: normal;
     text-align: center;
-    padding-top:30px;
-    padding-bottom:30px;
 }
 p {
     font-family: var(--paragraph-font);
@@ -58,19 +68,48 @@ label:hover{
     font-size: 19px;
     text-decoration: underline;
 }
+.song label:hover{
+    cursor: pointer;
+}
 .big-img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width:30%;
     border: white solid 10px;
-    box-shadow: 10px 10px #00000087;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
+}
+.archive-explanation{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #202225;
+    width:30%;
+    box-shadow: 0px 0px 0px 10px #20222587;
+    color: white;
+    text-align: center;
 }
 #discography-title{
-    text-shadow: #202225;
+    background-color: #ffffff2b;
+    margin-top:40px;
+    margin-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
+    display:grid;
+}
+.discography-title-background{
+    background-color: #202225;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 0px 10px #20222587
+}
+#discography-title h1{
+    font-size: 40px;
 }
 #songlist {
-    max-width: 1000px;
+    width: 1000px;
     margin: auto;
 }
 .spacer{
@@ -79,7 +118,7 @@ label:hover{
 #featured-group{
     background-color: #202225;
     color: white;
-    box-shadow: 10px 10px #00000087;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     margin: 10px;
     padding: 10px;
     max-width: 1000px;
@@ -94,31 +133,31 @@ label:hover{
 #first-page-song {
     border-top: 0px;
 }
-#featured-group .cover{
+.outline{
     border: #ffffff3e solid 1px;
 }
 #bbt6-group{
     background-color: #202225;
     color: white;
-    box-shadow: 10px 10px #00000087;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     margin: 10px;
     padding: 10px;
 }
-#bbt6-group label:hover{
+#bbt6-group .song label:hover{
     color: #a789fa;
 }
 #bbt6-group .song{
     border-color: white;
 }
 #sky-racer-group{
-    background-color: #0617b3;
+    background-color: #202225;
     color: white;
-    box-shadow: 10px 10px #00000087;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     margin: 10px;
     padding: 10px;
 }
-#sky-racer-group label:hover{
-    color: #f7ff7f;
+#sky-racer-group .song label:hover{
+    color: #71b1ff;
 }
 #sky-racer-group .song{
     border-color: white;
@@ -126,32 +165,96 @@ label:hover{
 #beep-bishop-group{
     background-color: #202225;
     color: white;
-    box-shadow: 10px 10px #00000087;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     margin: 10px;
     padding: 10px;
 }
 #beep-bishop-group .song{
     border-color: white;
 }
-#beep-bishop-group label:hover{
+#beep-bishop-group .song label:hover{
     color: #a789fa;
 }
 #misc-group{
-    background-color: #9f9f9f;
-    color: black;
-    box-shadow: 10px 10px #00000087;
+    background-color: #202225;
+    color: white;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     margin: 10px;
     padding: 10px;
 }
 #misc-group .song {
-    border-color: black;
+    border-color: white;
 }
 #misc-group .group {
-    border-color: black;
+    border-color: white;
 }
-#misc-group label:hover{
-    color: white;
+#misc-group .song label:hover{
+    color: #f7ff7f;
 }
+.group-shadow{
+    display:block;
+    width: 100%;
+    background-color: #ffffff3e;
+}
+.archive-series{
+    max-width:1000px;
+    margin:10px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #202225;
+    color:white;
+    box-shadow: -50px 0px 0px #20222587, -100px 0px 0px #20222550, 100px 0px 0px #20222550, 50px 0px 0px #20222587;
+}
+#utdr-group a{
+    color: #e43535;
+}
+#zelda-group a{
+    color: #f7ff7f;
+}
+.archive-song{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    border-top: 2px solid white;
+    max-height: 100px;
+}
+.series-logo{
+    grid-column:1;
+    width:100%
+}
+.archive-group{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 100px;
+    border-bottom: solid 3px white;
+    padding: 5px 0px 5px 5px;
+}
+.game{
+    font-size: large;
+    grid-column: 1;
+    grid-row:1/-1;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+.cover-link{
+    font-size: large;
+    font-family: var(--heading-font);
+    text-align: left;
+    margin-top: 13px;
+    margin-bottom: auto;
+    margin-left: 10px;
+    grid-column: 2;
+}
+.cover-info{
+    grid-row: 2;
+    grid-column-start: 2;
+    margin-left: 10px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
 .song,.group{
     display: grid;
     grid-template-columns: 1.5fr 2fr 2fr 2fr 320px 40px 40px;
@@ -162,7 +265,7 @@ label:hover{
     border-top: 1px;
 }
 .song{
-    border-top: 2px solid gray;
+    border-top: 2px solid white;
 }
 .group{
     border-bottom: 3px solid white;
@@ -193,6 +296,7 @@ audio{
 }
 .yt-link{
     grid-column:7;
+    grid-row:1;
     padding-top: 19px;
     padding-left: 1px;
     padding-right: 1px;
@@ -209,24 +313,39 @@ audio{
     margin-bottom: 3px;
     margin-top: 3px;
 }
-.song input[type=checkbox]:checked~.info {
+.song input[type=radio]:checked~.info {
     display: grid;
     grid-template-columns: 9fr 1fr;
     grid-row: 2;
     grid-column:2/8;
 }
-.song input[type=checkbox]:checked~.cover {
+.song input[type=radio]:checked~.cover {
     transition: width 0.5s;
     width: 150px;
     grid-row: 1/-1;
 }
-.group input[type=checkbox]:checked~.info {
+.shadow{
+    width:0px;
+    height:0px;
+    transition: background-color 0.75s;
+}
+.song input[type=radio]:checked~.shadow {
+    max-width: 1600px;
+    width: 100%;
+    position: absolute;
+    margin-left: -18.71%;
+    height: 150px;
+    margin-top:2px;
+    background-color: #ffffff2b;
+    z-index: -1;
+}
+.group .info {
     display: grid;
     grid-template-columns: 9fr 1fr;
     grid-row: 2;
     grid-column:2/8;
 }
-.group input[type=checkbox]:checked~.cover {
+.group .cover {
     transition: width 0.5s;
     width: 150px;
     grid-row: 1/-1;
@@ -264,15 +383,67 @@ input{
 }
 #about-me{
     max-width: 1000px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     background-color: white;
     text-align: center;
-    box-shadow: 10px 10px #00000087;
+    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     padding: 10px;
 }
+#banner{
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+#beepbox-editor{
+    width:100%;
+}
+#about-msg{
+    color:white;
+    height: 100%;
+    grid-column:1/4;
+    grid-row:1/4
+}
+#current-project{
+    margin-top: 70px;
+}
+#recent-updates{
+    margin-top: 200px;
+}
+#about-me-msg{
+    margin-top: 200px;
+}
+#about-msg p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--paragraph-font);
+    text-shadow: 1px 1px #202225;
+}
+#about-msg h1{
+    font-size: 25px;
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px #202225;
+}
 footer {
-    background-color: white;
+    background-color: #202225;
     display: grid;
     grid-template-columns: 150px auto;
     height: 90px;
+    color: white;
+}
+footer p {
+    display: flex;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 15px;
+    font-family: var(--paragraph-font)
+}
+footer a {
+    text-align: center;
+    color: #a789fa;
+    font-size: 15px;
+    font-family: var(--paragraph-font)
+}
+footer .yt-link{
+    padding-top:34px;
 }
