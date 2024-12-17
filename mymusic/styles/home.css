@@ -8,6 +8,7 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #f7ff7f;
+    overflow-x:hidden;
 }
 header {
     background-color: #202225;
@@ -15,6 +16,9 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     height: 90px;
+}
+a{
+    color: #a789fa;
 }
 nav{
     display: flex;
@@ -331,9 +335,9 @@ audio{
 }
 .song input[type=radio]:checked~.shadow {
     max-width: 1600px;
-    width: 100%;
+    width: 1600px;
     position: absolute;
-    margin-left: -18.71%;
+    margin-left:-325px;
     height: 150px;
     margin-top:2px;
     background-color: #ffffff2b;
@@ -429,6 +433,7 @@ footer {
     display: grid;
     grid-template-columns: 150px auto;
     height: 90px;
+    max-height: 90px;
     color: white;
 }
 footer p {
@@ -436,13 +441,8 @@ footer p {
     text-align: center;
     padding-top: 17px;
     font-size: 15px;
-    font-family: var(--paragraph-font)
-}
-footer a {
-    text-align: center;
-    color: #a789fa;
-    font-size: 15px;
-    font-family: var(--paragraph-font)
+    font-family: var(--paragraph-font);
+    margin-bottom:0px;
 }
 footer .yt-link{
     padding-top:34px;
