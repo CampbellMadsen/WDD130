@@ -429,12 +429,14 @@ input{
     text-shadow: 2px 2px #202225;
 }
 footer {
+    position: relative;
     background-color: #202225;
     display: grid;
     grid-template-columns: 150px auto;
     height: 90px;
-    max-height: 90px;
     color: white;
+    margin-bottom: -3px;
+    bottom: 0;
 }
 footer p {
     display: flex;
@@ -442,8 +444,10 @@ footer p {
     padding-top: 17px;
     font-size: 15px;
     font-family: var(--paragraph-font);
-    margin-bottom:0px;
 }
 footer .yt-link{
     padding-top:34px;
+}
+.logo_link{
+    max-height: 90px;
 }
