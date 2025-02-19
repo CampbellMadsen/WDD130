@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Music | Discography</title>
     <link rel="stylesheet" href="styles/home.css">
+    <script type="module" src="discography.mjs" defer></script>
 </head>
 
 <body>
@@ -17,6 +18,7 @@
             <h3>My Music</h3>
             <a href="home.html">Home</a>
             <a href="discography.html">Discography</a>
+            <a href="covers-remixes.html">Covers & Remixes</a>
             <a href="archive.html">Archive</a>
         </nav>
     </header>
@@ -24,8 +26,9 @@
         <div id="discography-title">
             <div class="discography-title-background"><h1>D I S C O G R A P H Y</h1></div>
         </div>
+        <div id="test"></div>
         <div id="songlist">
-            <div id="bbt6-group">
+            <div id="bbt6-group" class="album">
                 <div class="group">
                     <label class="song-title" for="bbt6">BeepBox Discord Tournament 6 Submissions</label>
                     <input id="bbt6" type="radio" name="radio">
@@ -155,7 +158,7 @@
                 </div>
             </div>
             <div class="spacer"></div>
-            <div id="sky-racer-group">
+            <div id="sky-racer-group" class="album">
                 <div class="group">
                     <label class="song-title" for="sky-racer-ep">Sky Racer EP</label>
                     <input id="sky-racer-ep" type="radio" name="radio">
@@ -266,7 +269,7 @@
                 </div>
             </div>
             <div class="spacer"></div>
-            <div id="beep-bishop-group">
+            <div id="beep-bishop-group" class="album">
                 <div class="group">
                     <label class="song-title" for="beep-bishop">Beep Bishop Contest Submissions</label>
                     <input id="beep-bishop" type="radio" name="radio">
@@ -314,7 +317,7 @@
                 </div>
             </div>
             <div class="spacer"></div>
-            <div id="misc-group">
+            <div id="misc-group" class="album">
                 <div class="group">
                     <label class="song-title" for="miscellaneous-songs">Miscellaneous Songs & remixes</label>
                     <input id="miscellaneous-songs" type="radio" name="radio">
@@ -443,7 +446,7 @@
             <img class="logo" src="images/mymusiclogo.svg" alt="my music logo">
         </a>
         <p>All music on this site is made with&nbsp;<a target="_blank" href="https://www.beepbox.co">Beepbox.co</a>&nbsp;by John Nesky, and its derivatives. Songs are free to download and use with credit.</p>
-        <a class="yt-link" target="_blank" href="https://tinyurl.com/2b3u9jc4"><img src="images/youtube-logo.webp" width="30px" alt="youtube link"></a>
+        <a class="yt-link" target="_blank" href="https://www.youtube.com/@potatojuiceultra"><img src="images/youtube-logo.webp" width="30px" alt="youtube link"></a>
     </footer>
 </body>
 

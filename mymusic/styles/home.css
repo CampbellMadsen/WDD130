@@ -140,57 +140,25 @@ label:hover{
 .outline{
     border: #ffffff3e solid 1px;
 }
-#bbt6-group{
+.album{
     background-color: #202225;
     color: white;
     box-shadow: 10px 10px #20222587, 20px 20px #20222550;
     margin: 10px;
     padding: 10px;
 }
-#bbt6-group .song label:hover{
-    color: #a789fa;
-}
-#bbt6-group .song{
+.album .song, .group{
     border-color: white;
 }
-#sky-racer-group{
-    background-color: #202225;
-    color: white;
-    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
-    margin: 10px;
-    padding: 10px;
+
+#bbt6-group .song label:hover{
+    color: #a789fa;
 }
 #sky-racer-group .song label:hover{
     color: #71b1ff;
 }
-#sky-racer-group .song{
-    border-color: white;
-}
-#beep-bishop-group{
-    background-color: #202225;
-    color: white;
-    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
-    margin: 10px;
-    padding: 10px;
-}
-#beep-bishop-group .song{
-    border-color: white;
-}
 #beep-bishop-group .song label:hover{
     color: #a789fa;
-}
-#misc-group{
-    background-color: #202225;
-    color: white;
-    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
-    margin: 10px;
-    padding: 10px;
-}
-#misc-group .song {
-    border-color: white;
-}
-#misc-group .group {
-    border-color: white;
 }
 #misc-group .song label:hover{
     color: #f7ff7f;
