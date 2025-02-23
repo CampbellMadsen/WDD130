@@ -61,6 +61,7 @@ h1 {
 }
 p {
     font-family: var(--paragraph-font);
+    color: white;
     font-size: 14px;
 }
 label {
@@ -112,7 +113,7 @@ label:hover{
 #discography-title h1{
     font-size: 40px;
 }
-#songlist {
+#songlist, #songlist-covers {
     width: 1000px;
     margin: auto;
 }
@@ -120,19 +121,11 @@ label:hover{
     height: 30px;
 }
 #featured-group{
-    background-color: #202225;
-    color: white;
-    box-shadow: 10px 10px #20222587, 20px 20px #20222550;
-    margin: 10px;
-    padding: 10px;
     max-width: 1000px;
     margin:auto;
 }
 #featured-group label:hover{
     color: #a789fa;
-}
-#featured-group .song{
-    border-color: white;
 }
 #first-page-song {
     border-top: 0px;
@@ -140,7 +133,58 @@ label:hover{
 .outline{
     border: #ffffff3e solid 1px;
 }
-.album{
+.covers-album{
+    display: grid;
+    grid-template-columns: 175px 1fr;
+}
+.main-info{
+    grid-column:1;
+    display:flex;
+    flex-flow: column;
+}
+.covers-songlist{
+    grid-column:2;
+    display:flex;
+    flex-flow: column;
+    border-left: solid 3px white;
+    margin-left: 15px
+}
+.covers-song-description h4 {
+    font-family: var(--heading-font);
+    font-weight:100;
+    margin: 0;
+}
+hr{
+    border:solid 2px white;
+    width:98%;
+}
+.covers-cover{
+    width:150px;
+    display: block;
+}
+.covers-song{
+    display: grid;
+    grid-template-columns: 1fr 320px 40px 40px;
+    height: 80px;
+    align-items: center;
+    margin-left: 25px;
+}
+.covers-audio{
+    grid-column:2;
+}
+.covers-link{
+    grid-column: 3;
+}
+.covers-link img{
+    pointer-events: none;
+}
+.link img{
+    pointer-events: none;
+}
+.covers-ytlink{
+    grid-column: 4
+}
+.album, .covers-album{
     background-color: #202225;
     color: white;
     box-shadow: 10px 10px #20222587, 20px 20px #20222550;
@@ -296,16 +340,26 @@ audio{
     width: 150px;
     grid-row: 1/-1;
 }
-.shadow{
+.shadow,.covers-shadow{
     width:0px;
     height:0px;
     transition: background-color 0.75s;
 }
-.song input[type=radio]:checked~.shadow {
+.song input[type=radio]:checked~.shadow{
     max-width: 1600px;
     width: 1600px;
     position: absolute;
     margin-left:-325px;
+    height: 150px;
+    margin-top:2px;
+    background-color: #ffffff2b;
+    z-index: -1;
+}
+.covers-song input[type=radio]:checked~.covers-shadow{
+    max-width: 1600px;
+    width: 1600px;
+    position: absolute;
+    margin-left:-537px;
     height: 150px;
     margin-top:2px;
     background-color: #ffffff2b;

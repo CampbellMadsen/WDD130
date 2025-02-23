@@ -1,29 +1,36 @@
 import { albums } from "./mymusic.js";
-function renderAlbums(albums) {
-    const songlist = document.querySelector("#songlist")
+function renderFrontPageSongList(albums) {
+    let featuredSongList = []
+    for (let i = 0; i < albums.length; i++) {
+        for (let j = 0; j < albums[i].songs.length; j++) {
+            const songid = albums[i].songs[j].label;
+            if (songid == "sky-racer" || 
+                songid == "sound-limit" || 
+                songid == "it-all-comes-down-to-this") {
+                featuredSongList.push(albums[i].songs[j])
+            }
+        }
+    }
     let html = ""
-    for (let i = 0; i < albums.length; i++){
-        html+=renderAlbum(albums[i])
+    for (let i = 0; i < featuredSongList.length; i++) {
+        if (i == 0) {
+            html += '<div class="song" id = "first-page-song">'
+        } else {
+            html += '<div class="song">'
+        }
+        html += renderSong(featuredSongList[i])
     }
-    songlist.innerHTML = html
+    const featuredSongs = document.querySelector("#featured-group")
+    featuredSongs.innerHTML = html
 }
-function renderAlbum(album){
-    let html = `<div id="${album.albumid}" class="album">`
-    for (let i = 0; i < album.songs.length; i++){
-        html+=renderSong(album.songs[i])
-    }
-    html += `</div><div class="spacer"></div>`;
-    return html
-}
-
 function renderSong(song){
+
     const audio = song.audio == "" ? "": `<audio controls><source src="${song.audio}" type="audio/mp3"></audio>`;
     const isThereADate = song.date == "" ? "": `<h3 class="date-title">Released</h3><p class="date-text">${song.date}</p>`;
     const yt = song.ytlink == "" ? "": `<a class="yt-link" target="_blank" href="${song.ytlink}"><img src="images/youtube-logo.webp" width="30px" alt="youtube link"></a>`
     const linkType = song.type == "ub" ? `<a class="link" target="_blank" href="${song.link}"><img src="images/ultrabox-logo.webp" width="30px" alt="ultrabox link"></a>`:
     song.type == "jb" ? `<a class="link" target="_blank" href="${song.link}"><img src="images/jummbox-logo.webp" width="30px" alt="jummbox link"></a>` : "";
-    return `<div class="${song.class}">
-                    <label class="song-title" for="${song.label}">${song.title}</label>
+    return `        <label class="song-title" for="${song.label}">${song.title}</label>
                     <input id="${song.label}" type="radio" name="radio">
                     <img class="${song.outline}" src="${song.cover}" alt="${song.alt}">
                     ${audio}
@@ -39,7 +46,7 @@ function renderSong(song){
     `
     
 }
-renderAlbums(albums)
+renderFrontPageSongList(albums)
 function copyShortlink(event){
     event.preventDefault()
     if (event.target.className == 'link')
@@ -57,5 +64,5 @@ function copyHandler(url){
         }
     }
 }
-const songlist = document.querySelector("#songlist")
+const songlist = document.querySelector("#featured-group")
 songlist.addEventListener("contextmenu", copyShortlink)

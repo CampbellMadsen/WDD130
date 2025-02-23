@@ -11,7 +11,7 @@ export const albums = [
             //     outline: "",
             //     alt: "",
             //     audio: "",
-            //     ub: True,
+            //     type: "ub",
             //     link: "",
             //     shortlink: "",
             //     ytlink: "",
