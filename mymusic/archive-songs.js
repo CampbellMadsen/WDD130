@@ -94,7 +94,7 @@ export const games = [
     },
     {
         gameid: "zelda-group",
-        logo: "images/Zelda_logo.svg.png",
+        logo: "images/Zelda_Logo.svg.png",
         alt: "Zelda Logo",
         gametitle: "The Legend of Zelda",
         songs:[
