@@ -66,8 +66,8 @@ function songHandler(song){
     }
 }
 function copyShortlink(event){
-    event.preventDefault()
     if (event.target.className == 'covers-link')
+        event.preventDefault()
         copyHandler(event.target.href)
 }
 function copyHandler(url){
@@ -75,7 +75,6 @@ function copyHandler(url){
         for (let j = 0; j < coversAlbums[i].songs.length; j++){
             let bigurl = coversAlbums[i].songs[j].link;
             if (bigurl == url){
-                console.log(coversAlbums[i].songs[j].shortlink)
                 navigator.clipboard.writeText(coversAlbums[i].songs[j].shortlink)
             }
         }

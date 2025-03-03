@@ -41,8 +41,8 @@ function renderSong(song){
 }
 renderAlbums(albums)
 function copyShortlink(event){
-    event.preventDefault()
     if (event.target.className == 'link')
+        event.preventDefault()
         copyHandler(event.target.href)
 }
 function copyHandler(url){
@@ -51,7 +51,6 @@ function copyHandler(url){
             let bigurl = albums[i].songs[j].link;
             console.log(bigurl)
             if (bigurl == url){
-                console.log(albums[i].songs[j].shortlink)
                 navigator.clipboard.writeText(albums[i].songs[j].shortlink)
             }
         }
